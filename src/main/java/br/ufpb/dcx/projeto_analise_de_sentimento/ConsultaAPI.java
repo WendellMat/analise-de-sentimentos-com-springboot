@@ -12,10 +12,9 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ConsultaAPI {
-    private Client client = Client.builder().apiKey("AIzaSyCE_5b04_XdVtxufirfJq17gMxI8ET2Cb4").build();
+    private Client client = Client.builder().apiKey("GEMINI_API_KEY").build();
 
     public String verificarSentimento(String comentarioASerAnalisado) {
-        System.out.println(comentarioASerAnalisado);
         GenerateContentResponse response =
                 client.models.generateContent(
                         "gemini-2.5-flash",
@@ -23,7 +22,6 @@ public class ConsultaAPI {
                                 "descrição do motivo: " + comentarioASerAnalisado,
                         null);
 
-        System.out.println(response.text());
         return response.text();
     }
 }
