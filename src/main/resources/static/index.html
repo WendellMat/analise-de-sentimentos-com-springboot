@@ -3,20 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Enviar Comentário</title>
+
+    <!-- Importa o arquivo CSS para estilização da página -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h2>Deixe seu comentário para que nossa IA o analise</h2>
-<textarea id="comentario" rows="4" cols="50" placeholder="Digite seu comentário..."></textarea><br>
-<button onclick="enviarComentario()">Enviar</button>
-<h2 id="titulo-resultado" style="display: none;"></h2>
-<p id="resultado">
-<div id="loader" class="loader" style="display: none;"></div>
-</p>
+    <!-- Título da página -->
+    <h2>Deixe seu comentário para que nossa IA o analise</h2>
 
+    <!-- Área de texto onde o usuário digita o comentário -->
+    <textarea id="comentario" rows="4" cols="50" placeholder="Digite seu comentário..."></textarea><br>
 
-<script defer src="script.js"></script>
+    <!-- Botão que chama a função JavaScript para enviar o comentário -->
+    <button onclick="enviarComentario()">Enviar</button>
+
+    <!-- Título que exibirá o resultado da análise (inicialmente oculto) -->
+    <h2 id="titulo-resultado" style="display: none;"></h2>
+
+    <!-- Parágrafo que exibirá o texto da resposta da análise -->
+    <p id="resultado"></p>
+
+    <!-- Loader (indicador de carregamento), oculto inicialmente -->
+    <div id="loader" class="loader" style="display: none;"></div>
+
+    <!-- Importa o script JavaScript responsável pela lógica de envio e resposta -->
+    <script defer src="script.js"></script>
 
 </body>
 </html>

@@ -17,7 +17,7 @@ import lombok.Setter;
 public class ConsultaAPI {
 
     // Chave de acesso à API do Gemini
-    private final String GEMINI_API_KEY = "SUA CHAVE AQUI";
+    private final String GEMINI_API_KEY = "AIzaSyCE_5b04_XdVtxufirfJq17gMxI8ET2Cb4";
 
     // Cliente da API Gemini, criado usando a chave de acesso
     private Client client = Client.builder().apiKey(GEMINI_API_KEY).build();
