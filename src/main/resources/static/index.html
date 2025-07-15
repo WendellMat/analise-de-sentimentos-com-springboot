@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Enviar Comentário</title>
+</head>
+<body>
+
+<h2>Deixe seu comentário para que nossa IA o analise</h2>
+<textarea id="comentario" rows="4" cols="50" placeholder="Digite seu comentário..."></textarea><br>
+<button onclick="enviarComentario()">Enviar</button>
+<h2 id="titulo-resultado" style="display = none;"></h2>
+<p id="resultado"></p>
+
+<script>
+    function enviarComentario() {
+        const comentario = document.getElementById('comentario').value;
+
+        fetch('http://localhost:8080/api/comentario', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ conteudo: comentario })
+        })
+        .then(response => response.text())
+        .then(data =>{
+            document.getElementById('titulo-resultado').style.display = 'block';
+            document.getElementById('titulo-resultado').textContent = 'Resultado da Análise';
+            document.getElementById('resultado').textContent = data;
+        })
+        .catch(error => console.error('Erro:', error));
+    }
+</script>
+
+</body>
+</html>
