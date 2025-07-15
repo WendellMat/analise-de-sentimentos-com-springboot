@@ -8,7 +8,7 @@ function enviarComentario() {
     tituloResultado.textContent = 'Analisando...';
     resultado.innerHTML = '<div class="loader"></div>';
 
-
+    // Realiza a comunicação com a API através do requisição "POST"
     fetch('http://localhost:8080/api/comentario', {
        method: 'POST',
        headers: { 'Content-Type': 'application/json' },

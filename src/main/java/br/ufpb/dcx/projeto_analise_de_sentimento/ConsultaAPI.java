@@ -12,7 +12,8 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ConsultaAPI {
-    private Client client = Client.builder().apiKey("GEMINI_API_KEY").build();
+    private final String GEMINI_API_KEY = "";
+    private Client client = Client.builder().apiKey(GEMINI_API_KEY).build();
 
     public String verificarSentimento(String comentarioASerAnalisado) {
         GenerateContentResponse response =
