@@ -84,9 +84,13 @@ git clone https://github.com/seu-usuario/nome-do-repositorio.git
 
 ### 5️⃣ Após isso, entre com seu comentário e aguarde alguns segundos enquanto o Gemini analisa
 
+---
+
 ## 📅 Passo a Passo para ver o histórico de comentários analisados
 
 ### 1️⃣ Após a análise de alguns comentários, você pode vê-los no seguinte link: http://localhost:8080/api/get/comments
+
+---
 
 ## 🗑️ Passo a Passo para remover um comentário do histórico
 
