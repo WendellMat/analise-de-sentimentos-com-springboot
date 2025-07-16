@@ -87,3 +87,9 @@ git clone https://github.com/seu-usuario/nome-do-repositorio.git
 ## 📅 Passo a Passo para ver o histórico de comentários analisados
 
 ### 1️⃣ Após a análise de alguns comentários, você pode vê-los no seguinte link: http://localhost:8080/api/get/comments
+
+## 🗑️ Passo a Passo para remover um comentário do histórico
+
+### 1️⃣ Para remover um comentário analisado do histórico, você deve usar este link passando o id do comentário que você deseja excluir ao final da URL, você consegue o id consultando o histórico(retire as chaves): http://localhost:8080/api/delete/comment/{id}
+
+### Observação: Sei que o que fiz não é a melhor prática, pois o navegador não deveria executar um delete, mas era o mais rápido para que pudesse terminar a tempo.
