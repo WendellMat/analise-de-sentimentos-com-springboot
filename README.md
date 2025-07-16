@@ -54,7 +54,7 @@ git clone https://github.com/seu-usuario/nome-do-repositorio.git
 
 ---
 
-#### 6. Dentro da classe, na linha 20, substitua o texto "SUA CHAVE API AQUI" pela sua API Key, lembrando de manter a mesma entre aspas
+#### 6. Dentro da classe, na linha 20, substitua o texto "YOUR API KEY HERE" pela sua API Key, lembrando de manter a mesma entre aspas
 
 ---
 
