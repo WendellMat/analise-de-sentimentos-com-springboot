@@ -3,7 +3,7 @@ package br.ufpb.dcx.projeto_analise_de_sentimento;
 /**
  * Classe modelo que representa um comentário enviado pelo usuário.
  */
-public class Comentario {
+public class ComentarioDTO {
 
     // Atributo que armazena o conteúdo/texto do comentário
     private String conteudo;

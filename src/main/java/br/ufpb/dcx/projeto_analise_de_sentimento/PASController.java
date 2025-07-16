@@ -20,9 +20,9 @@ public class PASController {
     * Endpoint POST que recebe um comentário, analisa seu sentimento e retorna o resultado.
     */
     @PostMapping("/comentario")
-    public String receberComentario(@RequestBody Comentario comentario) {
+    public String receberComentario(@RequestBody ComentarioDTO comentarioDTO) {
         this.consulta = new ConsultaAPI(); // Cria uma nova instância de ConsultaAPI
-        String conteudoDoComentario = comentario.getConteudo(); // Obtém o texto do comentário
+        String conteudoDoComentario = comentarioDTO.getConteudo(); // Obtém o texto do comentário
         String resultadoDaConsulta = consulta.verificarSentimento(conteudoDoComentario); // Analisa o sentimento
         return resultadoDaConsulta; // Retorna o resultado da análise
     }
