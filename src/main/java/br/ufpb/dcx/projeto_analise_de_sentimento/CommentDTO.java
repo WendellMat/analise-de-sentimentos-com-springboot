@@ -8,6 +8,7 @@ public class CommentDTO {
     // Atributo que armazena o conteúdo/texto do comentário
     private String content;
     private String queryResult;
+    private String id;
 
     // Getters e Setters
     public String getContent() { return content; }
@@ -17,5 +18,9 @@ public class CommentDTO {
     public String getQueryResult() { return queryResult; }
 
     public void setQueryResult(String queryResult) { this.queryResult = queryResult; }
+
+    public String getId() { return id; }
+
+    public void setId(String id) { this.id = id; }
 }
 
