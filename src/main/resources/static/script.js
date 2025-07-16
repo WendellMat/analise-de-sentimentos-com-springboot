@@ -14,7 +14,7 @@ function sendComment() {
     fetch('http://localhost:8080/api/comment', {
        method: 'POST',
        headers: { 'Content-Type': 'application/json' }, // Define o tipo de conteúdo da requisição
-       body: JSON.stringify({ conteudo: comentario }) // Converte o objeto JS em JSON para envio
+       body: JSON.stringify({ content : comentario }) // Converte o objeto JS em JSON para envio
     })
     .then(response => response.text()) // Converte a resposta para texto
     .then(data =>{
