@@ -97,3 +97,9 @@ git clone https://github.com/seu-usuario/nome-do-repositorio.git
 ### 1️⃣ Para remover um comentário analisado do histórico, você deve usar este link passando o id do comentário que você deseja excluir ao final da URL, você consegue o id consultando o histórico(retire as chaves): http://localhost:8080/api/delete/comment/{id}
 
 ### Observação: Sei que o que fiz não é a melhor prática, pois o navegador não deveria executar um delete, mas era o mais rápido para que pudesse terminar a tempo.
+
+---
+
+# 🤖 Gostaria de saber onde eu utilizei IA na construção do projeto?
+
+## Acesse o seguinte documento Google: https://docs.google.com/document/d/1V19u6J7LMMe6hhVODszTCWu1Fj5T5z1N6cIlgDawrHw/edit?usp=sharing
