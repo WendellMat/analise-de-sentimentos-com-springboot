@@ -14,10 +14,10 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class ConsultaAPI {
+public class APIQuery {
 
     // Chave de acesso à API do Gemini
-    private final String GEMINI_API_KEY = "SUA CHAVE API AQUI";
+    private final String GEMINI_API_KEY = "YOUR API KEY HERE";
 
     // Cliente da API Gemini, criado usando a chave de acesso
     private Client client = Client.builder().apiKey(GEMINI_API_KEY).build();
@@ -25,13 +25,13 @@ public class ConsultaAPI {
     /**
     * Método que envia um comentário para a API do Gemini e retorna a análise de sentimento.
     */
-    public String verificarSentimento(String comentarioASerAnalisado) {
+    public String verifySentiment(String commentToBeAnalysed) {
         // Envia a requisição para o modelo "gemini-2.5-flash" solicitando a análise de sentimento
         GenerateContentResponse response =
                 client.models.generateContent(
                         "gemini-2.5-flash",
                         "Analise o sentimento/humor deste conteúdo em positivo, negativo ou neutro e dê uma breve " +
-                                "descrição do motivo: " + comentarioASerAnalisado,
+                                "descrição do motivo: " + commentToBeAnalysed,
                         null);
 
         // Retorna o texto de resposta gerado pela API

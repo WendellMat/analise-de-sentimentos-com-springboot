@@ -1,4 +1,4 @@
-function enviarComentario() {
+function sendComment() {
     const comentario = document.getElementById('comentario').value;
     const tituloResultado = document.getElementById('titulo-resultado');
     const resultado = document.getElementById('resultado');
@@ -11,7 +11,7 @@ function enviarComentario() {
     resultado.innerHTML = '<div class="loader"></div>';
 
     // Realiza a comunicação com a API através do requisição "POST"
-    fetch('http://localhost:8080/api/comentario', {
+    fetch('http://localhost:8080/api/comment', {
        method: 'POST',
        headers: { 'Content-Type': 'application/json' }, // Define o tipo de conteúdo da requisição
        body: JSON.stringify({ conteudo: comentario }) // Converte o objeto JS em JSON para envio
