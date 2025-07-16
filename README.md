@@ -7,7 +7,7 @@ Este projeto é uma aplicação simples que analisa o sentimento de um comentár
 ## 📋 Requisitos
 
 ### Para o Backend (Java + Spring Boot)
-- JDK 17+
+- JDK 21+
 - Maven 3.8+
 - IDE (ex: IntelliJ IDEA, Eclipse ou VS Code)
 - Dependências:

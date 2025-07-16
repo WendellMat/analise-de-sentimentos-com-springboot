@@ -1,5 +1,6 @@
 package br.ufpb.dcx.projeto_analise_de_sentimento;
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -40,12 +41,14 @@ public class PASController {
     /**
      * Endpoint para listar todos os comentários analisados.
      */
-
     @GetMapping("/get/comments")
     public List<CommentDTO> listComments() {
        return comments;
     }
 
+    /**
+     * Endpoint para excluir um comentário do histórico através do seu ID.
+     */
     // Fiz como GET para que seja possível o teste via navegador, mas encare como se fosse um
     // @DeleteMapping
     @GetMapping("/delete/comment/{id}")
